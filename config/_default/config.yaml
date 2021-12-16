@@ -1,0 +1,126 @@
+theme: "starter-hugo-academic"
+# Configuration of Hugo
+# Guide: https://wowchemy.com/docs/getting-started/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+title: Academic Website # Website name
+baseurl: 'https://rodrigomahlmeister.com/' # Website URL
+copyright: '' # Footer text, e.g. '© {year} Me'
+
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+############################
+## MODULES
+############################
+
+module:
+  imports:
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
+
+############################
+## ADVANCED
+############################
+
+enableGitInfo: false
+summaryLength: 30
+paginate: 5
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+permalinks:
+  event: '/talk/:slug/'
+  authors: '/author/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+disableAliases: true
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 75
+  anchor: smart
+timeout: 600000
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  _merge: deep
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight2: 70
+      
+params:
+  orgName: "Rodrigo Mahlmeister"
+  orgLocal: ""
+  description: "Personal website and portfolio of Rodrigo Mahlmeister"
+  twitter: "ro_mahl"
+
+  # use a built-in color theme
+  # one of: forest / grayscale / peach / plum /
+  #         poppy / sky / violet / water
+  theme: "grayscale"
+
+  # or, leave theme empty & make your own palette
+  # see docs at https://hugo-apero.netlify.app/blog/color-themes/
+  # the custom scss file must be in the assets/ folder
+  # add the filename name here, without extension
+  # to use hex colors instead of named tachyons colors, include "hex" in filename
+  custom_theme: "fb-hex"
+
+  # use an embedded font-family
+  # serif options: Fraunces / EB Garamond / Bitter
+  # sans-serif options: Commissioner / Alegreya Sans / Metropolis
+  # if you import your own fonts, name them here too
+  customtextFontFamily: "Ilisarniq-Light"
+  customheadingFontFamily: "Petrona"
+  # alternatively, leave empty and select basic font options: sans-serif or serif
+  # for more http://tachyons.io/docs/typography/font-family/
+  textFontFamily: "sans-serif"
+  headingFontFamily: "sans-serif"
+  
+    # Social icons may appear on homepage and in site header or footer
+  # Configure show/hide above - add as many as you like below
+  # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
+  # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
+  # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
+  params.social:
+      icon     : "twitter" # icon name without the 'fa-'
+      icon_pack: "fab"
+      url      : "https://twitter.com/ro_mahl"
+      
+
+
+menu:
+  # Configure header
+  menu.header:
+    name: "About"
+    title: "About me"
+    url: "/about/"
+    weight: 1
+  
+    
+
+

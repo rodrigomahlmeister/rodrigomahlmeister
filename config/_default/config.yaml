@@ -100,27 +100,7 @@ params:
   # for more http://tachyons.io/docs/typography/font-family/
   textFontFamily: "sans-serif"
   headingFontFamily: "sans-serif"
-  
-    # Social icons may appear on homepage and in site header or footer
-  # Configure show/hide above - add as many as you like below
-  # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
-  # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
-  # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
-  params.social:
-      icon     : "twitter" # icon name without the 'fa-'
-      icon_pack: "fab"
-      url      : "https://twitter.com/ro_mahl"
-      
 
-
-menu:
-  # Configure header
-  menu.header:
-    name: "About"
-    title: "About me"
-    url: "/about/"
-    weight: 1
-  
     
 
 

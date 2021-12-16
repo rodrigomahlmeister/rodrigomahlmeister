@@ -5,10 +5,10 @@
 
 # Appearance
 
-theme: Academic Resumé
+theme: minimal
 day_night: true
 font: ''
-font_size: M
+font_size: L
 
 # SEO
 

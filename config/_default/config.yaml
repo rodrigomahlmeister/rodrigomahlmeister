@@ -1,4 +1,4 @@
-theme: "hugo-resume"
+theme: "hugo-resume-master"
 # Configuration of Hugo
 # Guide: https://wowchemy.com/docs/getting-started/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
@@ -58,9 +58,6 @@ taxonomies:
   publication_type: publication_types
   author: authors
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
   _merge: deep
 related:
   threshold: 80
@@ -70,36 +67,36 @@ related:
     - name: tags
       weight: 100
     - name: categories
-      weight2: 70
+      weight: 70
       
-params:
-  orgName: "Rodrigo Mahlmeister"
-  orgLocal: ""
-  description: "Personal website and portfolio of Rodrigo Mahlmeister"
-  twitter: "ro_mahl"
+#params:
+  #orgName: "Rodrigo Mahlmeister"
+  #orgLocal: ""
+  #description: "Personal website and portfolio of Rodrigo Mahlmeister"
+  #twitter: "ro_mahl"
 
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water
-  theme: "grayscale"
+  #theme: "grayscale"
 
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
   # the custom scss file must be in the assets/ folder
   # add the filename name here, without extension
   # to use hex colors instead of named tachyons colors, include "hex" in filename
-  custom_theme: "fb-hex"
+  #custom_theme: "fb-hex"
 
   # use an embedded font-family
   # serif options: Fraunces / EB Garamond / Bitter
   # sans-serif options: Commissioner / Alegreya Sans / Metropolis
   # if you import your own fonts, name them here too
-  customtextFontFamily: "Ilisarniq-Light"
-  customheadingFontFamily: "Petrona"
+  #customtextFontFamily: "Ilisarniq-Light"
+  #customheadingFontFamily: "Petrona"
   # alternatively, leave empty and select basic font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
-  textFontFamily: "sans-serif"
-  headingFontFamily: "sans-serif"
+  #textFontFamily: "sans-serif"
+  #headingFontFamily: "sans-serif"
 
     
 

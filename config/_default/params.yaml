@@ -21,12 +21,11 @@ twitter: 'ro_mahl'
 # Contact (edit or remove options as required)
 
 email: rodrigosmahlmeister@gmail.com
-phone: +55 11 996366400
 
 contact_links:
   - icon: twitter
     icon_pack: fab
-    name: DM Me
+    name: Twitter
     link: 'https://mobile.twitter.com/ro_mahl'
   - icon: skype
     icon_pack: fab
@@ -54,10 +53,9 @@ address_format: en-us
 
 highlight: true
 highlight_languages:
-  - R
-  - STATA
-  - Python
-  - LaTeX
+  - r
+  - python
+  - latex
 math: false
 diagram: false
 privacy_pack: false
@@ -72,7 +70,7 @@ edit_page:
 show_related:
   book: true
   page: false
-  post: false
+  post: true
   project: true
   publication: true
   event: true
